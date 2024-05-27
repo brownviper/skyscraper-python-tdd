@@ -11,3 +11,9 @@ def test_can_create_node_with_weight():
 def test_process_returns_true():
     assert Node(1).process() == True
 
+
+def test_can_create_node_with_children():
+    tree = Node(3, Node(2), Node(1))
+    assert tree.weight == 3
+    assert tree.right.weight == 2
+    assert tree.left.weight == 1

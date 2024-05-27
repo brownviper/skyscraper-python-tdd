@@ -1,15 +1,20 @@
-
 class Node:
-    def __init__(self, weight):
-        self.weight = weight
-        self.left_child = None
-        self.right_child = None
+    def __init__(self, weight, right=None, left=None):
+        self._weight = weight
+        self._right = right
+        self._left = left
 
-    def left_child(self, child):
-        self.left_child = child
+    @property
+    def weight(self):
+        return self._weight
 
-    def right_child(self, child):
-        self.right_child = child
+    @property
+    def right(self):
+        return self._right
+
+    @property
+    def left(self):
+        return self._left
 
     def process(self):
         return True
