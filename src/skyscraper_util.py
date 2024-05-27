@@ -4,7 +4,7 @@ def number_exist_in_array(number, skyscraper_heights):
     return idx > 0
 
 
-def process_skyscrapers_heights(heights):
+def solution(heights):
     results = [heights[-1]]
 
     for height in reversed(heights[:-1]):
