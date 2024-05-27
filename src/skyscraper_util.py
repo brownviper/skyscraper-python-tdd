@@ -24,4 +24,4 @@ def process_skyscrapers_heights(skyscraper_heights):
 def number_is_unique(number, skyscraper_heights):
     idx = len(list(filter(lambda x: x == number, skyscraper_heights)))
 
-    return idx == 0
+    return idx == 1
